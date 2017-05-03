@@ -1,0 +1,302 @@
+﻿body {
+    background-color:#473C8B;
+}
+#button-projects{
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    padding-left: 40px;
+    padding-top: 3px;
+    padding-bottom:0px;
+    text-align: left;
+    height: 40px;  
+}
+
+#form-group-button-project {
+    margin-top:8px;
+    margin-bottom:0px;
+}
+
+
+#button-sorting {
+     width: 100px;    
+}
+
+#label-dados-panel {
+    font-family: Arial;
+    font-size: 18px;
+    margin-top:4px;
+    font-weight: bold;
+    text-align: left;
+    width: 770px;
+    float:left;
+}
+
+.panel-body {
+    padding-right:4px;
+}
+
+#drowpdown-collapse {
+    text-align: right;
+    float: right;
+}
+.panel-default {
+    padding:0px;
+}
+
+.panel-heading {
+    padding: 0px;
+}
+
+#jumbo-panel{
+     padding:0px;
+     padding-left:60px;
+     background-color:#FFFFFF;
+     border:solid;
+     border-width: 0.1em;
+     border-color:#8B1A1A;
+}
+
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color:#FFFFFF;
+    border:solid;
+    border-width: 0.1em;
+    border-color:#8B1A1A;
+    
+    
+}
+
+select{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color:grey;
+}
+
+.col-md-6{
+    background-color:#FFFFF0;
+    margin: 0px;
+    padding:0px;
+    //padding-right:150px;
+    
+     
+}
+.list-group-item{
+    background-color:#FFFFF0;
+    margin: 0px;
+    padding:8px;
+    //padding-right:150px;
+    
+     
+}
+
+.list-group-item-heading{
+  
+    font-family: Arial;
+    font-size:18px;
+
+
+}
+#list-group-item-text {
+    //float:right;
+    margin:0px;
+    //padding-right:140px;
+    
+}
+
+.blackground-panel-projects {
+    //margin-top:70px;
+    //padding-bottom:70px;
+}
+
+
+.container{
+   
+    
+}
+
+#status{
+    width: 150px;
+    float: left;
+    font-size: 15px;
+    height: 30px;
+    margin-top: 6px;
+
+
+}
+
+#responsavel{
+    width: 100px;
+    float: right;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+table{
+    background-color:#337ab7;
+    border-radius: 10px;
+    color: white;
+}
+
+th{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+td{
+    text-align: center;
+}
+
+
+
+#showUser {
+    width: 150px;
+    
+}
+
+.input-group {
+    width: 1011px;
+     margin:0px;
+     padding:0px;
+    
+}
+#filtro-status {
+     width: 180px;
+     margin:0px;
+      margin-left:210px;
+     float:right;
+}
+
+.row {
+     width: 1500px;
+     margin:0px;
+     padding:0px;
+}
+
+#form-select-group {
+    width:150px;
+}
+
+#p-selecione {
+    color:lightslategrey;
+   
+}
+
+#div-all-buttons {    
+    margin-top:40px;  
+    text-align: center;
+}
+
+#tittle-form {
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+#container-projects-panel {
+    margin-top:0px;
+    padding:0px;
+}
+.btn-primary {
+    background-color: #FFB90F;
+    border-color: #FF7F24;
+    border-width: 1px;
+    color:#473C8B;
+    font-weight: bold;
+}
+
+#espaco {
+    width: 150px;
+    float: left;
+    font-size: 15px;
+    height: 30px;
+    margin-top: 6px;
+}
+
+
+
+
+.btn-primary:hover {
+background-color: #CD950C;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  background-color: #CD950C;
+}
+
+
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+    background-color: #CD950C;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #CD950C;
+} 
+
+
+.modal {
+  text-align: center;
+  padding:0px;
+
+  
+}
+@media (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align:middle;
+    content: " ";
+    height: 60%;
+    
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width:600px;
+}
+.modal-header {
+    background-color:#473C8B;
+    color:white;
+    
+}
+.modal-title{
+    font-weight:bold;
+}
+
+.modal-body{
+    text-align:left;
+    padding:50px;
+    padding-top:30px;
+    padding-bottom:15px;
+}
+.textarea-modal{
+   
+    width:100%;
+}
+.Titulo-Modal{
+    width: 100%;
+}
+.button-add-ocorrencia-modal{
+    margin-top:28px;
+    text-align:center;
+}
