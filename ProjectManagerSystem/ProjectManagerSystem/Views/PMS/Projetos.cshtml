@@ -9,7 +9,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Projetos</title>
     <script src="~/Scripts/jquery-3.1.1.js"></script>
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/projectApp.js"></script>
@@ -83,11 +83,9 @@
 
                 <!--ALL BUTTONS-->
                 <div id="div-all-buttons" class="form-group col-md-12">
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddProjetos()">Adicionar Projeto</button>
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-click="ctrl.Clear()" >Limpar</button>
+                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddProjetos()">Adicionar</button>
+                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="ctrl.verificaDadosLimpar()" ng-click="ctrl.Clear()">Limpar</button>
 
-
-                    <button type="button" class="btn btn-primary" ng-disabled="ctrl.showProjectButtons" data-toggle="modal" data-target="#myModal">Adicionar Ocorrência</button>
                     <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -111,13 +109,11 @@
                                         <button type="button" class="btn btn-primary" ng-disable="validarCampos.$invalid" ng-click="ctrl.AddOcorrencia()">Adicionar</button>
                                         <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
                                     </div>
-
-                                </div> <!-- class="modal-body -->
-                            </div> <!-- class="modal-content"> -->
-                        </div> <!-- class="modal-dialog" -->
+                                </div> 
+                            </div> 
+                        </div> 
                     </div>
 
-                    <button type="button" class="btn btn-primary" ng-click="ctrl.GetOcorrencias()" ng-disabled="ctrl.showProjectButtons" data-toggle="modal" data-target="#myModal2">Visualizar Ocorrências</button>
                     <div class="modal fade" id="myModal2" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -141,12 +137,25 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                 </div>
-                            </div> <!-- class="modal-content"> -->
-                        </div> <!-- class="modal-dialog" -->
-                    </div> <!-- class="modal fade" -->
+                            </div> 
+                        </div> 
+                    </div>
+
+                    
+                    
                     <button type="button" class="btn btn-primary" ng-show="ctrl.showAlterarButton" ng-disabled="ctrl.showProjectButtons" ng-click="ctrl.HabilitarEdicao()">Alterar</button>
                     <button type="button" class="btn btn-primary" ng-show="ctrl.salvar" ng-click="ctrl.AlterProjetos()">Salvar</button>
                     <button type="button" class="btn btn-primary" ng-disabled="ctrl.showProjectButtons" ng-click="ctrl.DelProjetos()">Excluir</button>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="ctrl.showProjectButtons">Ocorrências      <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">Adicionar</a></li>
+                            <li><a href="#" ng-click="ctrl.GetOcorrencias()" ng-disabled="ctrl.showProjectButtons" data-toggle="modal" data-target="#myModal2">Visualizar</a></li>
+                        </ul>
+                    </div>
+
                     <button type="button" class="btn btn-primary" ng-show="ctrl.btnSave" ng-hide="ctrl.btnAdd" ng-click="ctrl.Reload()">Cancelar</button>
                 </div>
                 <!--Fim BOTOESS-->
@@ -192,24 +201,37 @@
                 <br />
 
                 <!-- Registros dos Projetos-->
-                <div class="panel-body">
+                
                     <div class="list-group">
                         <div class="form-group">
 
                             <div ng-repeat="x in ctrl.projetos | filter: pesquisa | filter: status |filter: {Status: '!Excluido'} | orderBy:ctrl.Classificacao" ng-click="ctrl.Select(x)">
                                 <div class="form-group" id="form-group-button-project">
-                                    <button type="button" class="btn btn-primary btn-lg" id="button-projects">
-                                        <p id="label-dados-panel">
-                                            {{x.Nome}}
-                                            <div id="status"> Status: {{x.Status}}</div>
+                                    <div class="container" id="container-button">
+                                        <div class="row">
+                                            <div class="col-xs-9">
+                                                <button type="button" class="btn btn-primary btn-lg" id="button-projects">
 
-                                            <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Id}}" aria-haspopup="true" aria-expanded="false">
-                                                <span class="caret"></span>
-                                                <span class="sr-only">Toggle Dropdown</span>
+                                                    <div class="col-xs-6" id="label-nome-panel">
+                                                        {{x.Nome}}
+                                                    </div>
+                                                    <div class="col-xs-5" id="status">
+                                                        Status: {{x.Status}}
+
+                                                    </div>
+                                                    <div class="button-dropdown col-xs-1">
+                                                        <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Id}}" aria-haspopup="true" aria-expanded="false">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </div>
+                                                    </div>
+
+                                                </button>
                                             </div>
-                                        </p>
-                                        <!-- dropdown deslize-->
-                                    </button>
+                                        </div>
+                                    </div>
+                                        
+                              
                                 </div>
                                 <div class="container" id="container-projects-panel">
                                     <div id="{{x.Id}}" class="collapse">
@@ -245,7 +267,7 @@
 
                         </div>
                     </div>
-                </div>
+                
             </div>
         </container>
     </div>

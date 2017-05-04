@@ -43,8 +43,8 @@
                 </div>
                 <!--ALL BUTTONS-->
                 <div id="div-all-buttons" class="form-group col-md-12">
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disable="validarCampos.$invalid" ng-click="ctrl.AddUser()">Adicionar Usuário</button>
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disable="validarCampos.$invalid" ng-click="ctrl.Clear()">Limpar</button> 
+                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddUser()">Adicionar Usuário</button>
+                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="ctrl.verificaDadosLimpar()" ng-click="ctrl.Clear()">Limpar</button> 
                     <button type="button" ng-hide="edit" class="btn btn-primary" ng-disabled="validarCampos.$invalid" ng-click="ctrl.ExcluirUser()">Excluir</button>
                     <button type="button" class="btn btn-primary" ng-show="ctrl.alterar" ng-disabled="validarCampos.$invalid" ng-click="ctrl.HabilitarEdicao()">Alterar</button>
 

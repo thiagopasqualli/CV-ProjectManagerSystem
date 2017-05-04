@@ -39,9 +39,12 @@ myApp.controller('projectCtrl', function ($http, $window) {
 
     //Delete
     ctrl.DelProjetos = function () {
-        $http.post("/PMS/ExcluirProjeto", ctrl.newData);
-        location.reload();
-    }
+        confirma = confirm("Tem certeza que deseja excluir esse projeto?");
+        if (confirma) {
+            $http.post("/PMS/ExcluirProjeto", ctrl.newData);
+            location.reload();
+        }
+    } 
 
     //Alterar
     ctrl.AlterProjetos = function () {
@@ -110,10 +113,11 @@ myApp.controller('projectCtrl', function ($http, $window) {
 
     ctrl.Clear = function () {
         ctrl.newData = {};
+        ctrl.newData = null;
     }
 
     ctrl.verificaDadosLimpar = function () {
-        if (ctrl.newData == {})
+        if (ctrl.newData == null)
             return true;
         else
             return false;

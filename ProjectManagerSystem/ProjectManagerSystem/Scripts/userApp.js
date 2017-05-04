@@ -53,12 +53,18 @@ myApp.controller('userCtrl', function ($http, $window) {
     }
 
     ctrl.ExcluirUser = function () {
-        $http.post("/PMS/DelUsuarios", ctrl.newData).then(function (response) {
-            if ((response.data) == "True")
-                window.alert("excluiu");
-            else
-                window.alert("Usuario Vinculado!");
-        })}
+        confirma = confirm("Tem certeza que deseja excluir esse usuário?");
+        if (confirma) {
+            $http.post("/PMS/DelUsuarios", ctrl.newData).then(function (response) {
+                if ((response.data) == "True") {
+                    window.alert("Usuário excluído");
+                    location.reload();
+                }
+                else
+                    window.alert("Usuario vinculado a um projeto. Não é possível deletar.");
+            })
+        }
+    }
 
     //Selecionar 
     ctrl.SelectUser = function (user) {
@@ -69,5 +75,17 @@ myApp.controller('userCtrl', function ($http, $window) {
         ctrl.visualizar = true;
         ctrl.alterar = true;
         ctrl.salvar = false;
+    }
+
+    ctrl.Clear = function () {
+        ctrl.newData = {};
+        ctrl.newData == null;
+    }
+
+    ctrl.verificaDadosLimpar = function () {
+        if (ctrl.newData == null)
+            return true;
+        else
+            return false;
     }
 });
