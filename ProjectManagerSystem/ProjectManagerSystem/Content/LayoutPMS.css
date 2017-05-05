@@ -1,20 +1,15 @@
 ﻿body {
     background-color:#473C8B;
- 
-
 }
 #button-projects{
     width: 100%;
     margin:0px;
     padding: 0px;
-    
+    padding-left: 40px;
+    padding-top: 3px;
+    padding-bottom:0px;
+    text-align: left;
     height: 40px;  
-}
-#container-button {
-    width:100%;
-    
-    padding: 0px;
-     
 }
 
 #form-group-button-project {
@@ -24,33 +19,21 @@
 
 
 #button-sorting {
-     width: 100px;    
+     width: 55%;    
 }
 
-#label-nome-panel {
+#label-dados-panel {
     font-family: Arial;
     font-size: 18px;
     margin-top:4px;
     font-weight: bold;
     text-align: left;
-    
-    
-    
-}
-.button-dropdown {
-    text-align:right;
-    padding: 0px;
-}
-#status{
-    
-  text-align:right;
-  font-size:18px;
-  margin-top:4px;
-
+    width: 770px;
+    float:left;
 }
 
 .panel-body {
-   
+    padding-right:4px;
 }
 
 #drowpdown-collapse {
@@ -85,21 +68,7 @@
     
 }
 
-select{
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
-    border-color:grey;
-}
 
-.col-md-6{
-    background-color:#FFFFF0;
-    margin: 0px;
-    padding:0px;
-    //padding-right:150px;
-    
-     
-}
 .list-group-item{
     background-color:#FFFFF0;
     margin: 0px;
@@ -110,32 +79,24 @@ select{
 }
 
 .list-group-item-heading{
-    text-align:justify;
+  
     font-family: Arial;
     font-size:18px;
 
 
 }
-#list-group-item-text {
-    //float:right;
-    margin:0px;
-    //padding-right:140px;
-    
+
+
+
+#status{
+    width: 150px;
+    float: left;
+    font-size: 15px;
+    height: 30px;
+    margin-top: 6px;
+
+
 }
-
-.blackground-panel-projects {
-    //margin-top:70px;
-    //padding-bottom:70px;
-}
-
-
-.container{
-   
-    
-}
-
-
-
 
 #responsavel{
     width: 100px;
@@ -168,23 +129,19 @@ td{
 }
 
 .input-group {
-    width: 1011px;
+    
      margin:0px;
      padding:0px;
     
 }
 #filtro-status {
-     width: 180px;
+     width: 100px;
      margin:0px;
-      margin-left:210px;
+      
      float:right;
 }
 
-.row {
-     width: 1500px;
-     margin:0px;
-     padding:0px;
-}
+
 
 #form-select-group {
     width:150px;
@@ -202,7 +159,7 @@ td{
 
 #tittle-form {
     text-align:center;
-    margin-bottom: 50px;
+    
 }
 
 #container-projects-panel {
@@ -217,13 +174,9 @@ td{
     font-weight: bold;
 }
 
-#espaco {
-    width: 150px;
-    float: left;
-    font-size: 15px;
-    height: 30px;
-    margin-top: 6px;
-}
+
+
+
 
 
 .btn-primary:hover {
@@ -263,7 +216,9 @@ fieldset[disabled] .btn-primary.focus {
 
 .modal {
   text-align: center;
-  padding:0px; 
+  padding:0px;
+
+  
 }
 @media (min-width: 768px) {
   .modal:before {
@@ -306,5 +261,3 @@ fieldset[disabled] .btn-primary.focus {
     margin-top:28px;
     text-align:center;
 }
-
-
