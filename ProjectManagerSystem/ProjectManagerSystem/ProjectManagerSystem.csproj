@@ -236,6 +236,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\LayoutPMS.css" />
     <Content Include="Content\navbar.css" />
+    <Content Include="Content\reset.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

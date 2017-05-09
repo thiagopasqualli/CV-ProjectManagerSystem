@@ -14,6 +14,7 @@
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/projectApp.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
+   
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/navbar.css" rel="stylesheet" />
     <link href="~/Content/LayoutPMS.css" rel="stylesheet" />
@@ -22,9 +23,9 @@
 </head>
 
 <body ng-controller="projectCtrl as ctrl">
-    <div class="container">
+    <div class="container" >
         <div class="row">
-
+            <div class="col-sm-12 col-xs-12" ng-include="'/PMS/Menus'"> </div>
             <div class="jumbotron col-sm-12 col-xs-12">
                 <h2 id="tittle-form">Cadastro de Projetos</h2>
                 <form class="form-horizontal" name="validarCampos">
@@ -168,7 +169,7 @@
             </div>
 
             <div class="jumbotron col-sm-12 col-xs-12">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <h2 class="col-sm-12" id="tittle-form">Consulta de Projetos</h2>
                     </div>
@@ -214,17 +215,17 @@
                                     <div class="form-group" id="form-group-button-project">
                                         <div class="container" id="container-button">
                                             <div class="row">
-                                                <div class="col-xs-8">
+                                                <div class="col-xs-12">
                                                     <button type="button" class="btn btn-primary btn-lg" id="button-projects">
 
-                                                        <div class="col-xs-6" id="label-nome-panel">
+                                                        <div class="col-sm-9 col-xs-10" id="label-nome-panel">
                                                             {{x.Nome}}
                                                         </div>
-                                                        <div class="col-xs-5" id="status">
+                                                        <div class="col-sm-2 col-xs-2 hidden-xs" id="status">
                                                             Status: {{x.Status}}
 
                                                         </div>
-                                                        <div class="button-dropdown col-xs-1">
+                                                        <div class="button-dropdown col-sm-1 col-xs-2">
                                                             <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Id}}" aria-haspopup="true" aria-expanded="false">
                                                                 <span class="caret"></span>
                                                                 <span class="sr-only">Toggle Dropdown</span>
@@ -256,8 +257,6 @@
                                                 <div class="list-group-item clearfix">
                                                     <div class="list-group-item-heading col-md-6"><strong>Início Previsto:</strong> {{x.InicioPrevisto | date: 'dd/MM/yyyy'}} </div>
                                                     <div id="list-group-item-text" class="list-group-item-heading col-md-6"><strong>Fim Previsto:</strong> {{x.FimPrevisto | date: 'dd/MM/yyyy'}}</div>
-
-
                                                 </div>
 
                                                 <div class="list-group-item">

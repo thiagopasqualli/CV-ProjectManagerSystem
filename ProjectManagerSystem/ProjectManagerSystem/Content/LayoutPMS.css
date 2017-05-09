@@ -1,15 +1,19 @@
 ﻿body {
     background-color:#473C8B;
+    padding:0px;
+   
+    
+    
 }
 #button-projects{
     width: 100%;
     margin:0px;
     padding: 0px;
-    padding-left: 40px;
+    
     padding-top: 3px;
     padding-bottom:0px;
-    text-align: left;
-    height: 40px;  
+    
+
 }
 
 #form-group-button-project {
@@ -19,17 +23,39 @@
 
 
 #button-sorting {
-     width: 55%;    
+     width: 75%;    
 }
 
-#label-dados-panel {
-    font-family: Arial;
-    font-size: 18px;
-    margin-top:4px;
-    font-weight: bold;
-    text-align: left;
-    width: 770px;
-    float:left;
+
+#label-nome-panel{
+    margin:0px;
+    padding:0px;
+    padding-left:15px;
+    padding-top:4px;
+    text-align:left;
+   
+}
+#status{
+   font-size: 15px;
+   text-align:left;
+   padding-top:6px;
+}
+.col-xs-12{
+    padding:0px;
+}
+.container{
+    padding-left:0px;
+}
+/*.container .jumbotron {
+    padding-right: 30px;
+    padding-left: 15px;
+    border-radius: 6px;
+}*/
+.button-dropdown{
+    margin:0px;
+    padding:0px;
+   padding-bottom:3px;
+    text-align:right;
 }
 
 .panel-body {
@@ -73,30 +99,18 @@
     background-color:#FFFFF0;
     margin: 0px;
     padding:8px;
-    //padding-right:150px;
-    
-     
 }
 
 .list-group-item-heading{
-  
     font-family: Arial;
     font-size:18px;
-
-
+    padding-left:0px;
 }
 
-
-
-#status{
-    width: 150px;
-    float: left;
-    font-size: 15px;
-    height: 30px;
-    margin-top: 6px;
-
-
+.list-group-item clearfix {
+    padding:0px;
 }
+
 
 #responsavel{
     width: 100px;
@@ -105,6 +119,9 @@
     margin-right: 10px;
 }
 
+.row {
+    margin-left:0px;
+}
 table{
     background-color:#337ab7;
     border-radius: 10px;
