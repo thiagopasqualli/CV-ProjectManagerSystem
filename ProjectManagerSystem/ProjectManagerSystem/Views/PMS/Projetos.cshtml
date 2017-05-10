@@ -23,7 +23,7 @@
 </head>
 
 <body ng-controller="projectCtrl as ctrl">
-    <div class="container" >
+    <div class="container">
         <div class="row">
             <div class="col-sm-12 col-xs-12" ng-include="'/PMS/Menus'"> </div>
             <div class="jumbotron col-sm-12 col-xs-12">
@@ -83,13 +83,14 @@
                         </select>
                     </div>
 
+                </form>
                     <!--ALL BUTTONS-->
                     <div id="div-all-buttons" class="form-group col-md-12">
                         <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddProjetos()">Adicionar</button>
                         <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="ctrl.verificaDadosLimpar()" ng-click="ctrl.Clear()">Limpar</button>
-
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog">
+                        
+                        <div class="modal fade " id="myModal" role="dialog" tabindex="-1" aria-labelledby="gridSystemModalLabel">
+                            <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">×</button>
@@ -115,35 +116,36 @@
                                 </div>
                             </div>
                         </div>
-
+                           
                         <div class="modal fade" id="myModal2" role="dialog">
                             <div class="modal-dialog">
                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">×</button>
+                                        <h3 class="modal-title">Visualizar Ocorrência</h3>
+                                    </div>
                                     <div class="modal-body">
-                                        <div class="form-group col-md-11">
-                                            <h4>{{ctrl.newData.Nome}}</h4>
-                                            <table class="table table-bordered">
-                                                <tr>
-                                                    <th>Título</th>
-                                                    <th>Ocorrencia</th>
-                                                    <th>Inserção em</th>
-                                                </tr>
-                                                <tr ng-repeat="x in ctrl.ocurrences">
-                                                    <td>{{x.TituloOcorrencia}}</td>
-                                                    <td>{{x.DescricaoOcorrencia}}</td>
-                                                    <td>{{x.DataHora | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
-                                                </tr>
-                                            </table>
+                                        <div class="form-group">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">{{ctrl.newData.Nome}}</div>
+                                                <div class="panel-body" ng-repeat="x in ctrl.ocurrences">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item row">
+                                                            <div class="col-sm-8"><strong>Título:</strong> {{x.TituloOcorrencia}}</div>
+                                                            <div class="col-sm-4"><strong>Inserção em:</strong> {{x.DataHora | date: 'dd/MM/yyyy HH:mm:ss'}}</div>
+                                                        </li>
+                                                    </ul>
+                                                    <p id="ocorrencia-conteudo">{{x.DescricaoOcorrencia}}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                    <div class="button-add-ocorrencia-modal form-group">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
 
                         <button type="button" class="btn btn-primary" ng-show="ctrl.showAlterarButton" ng-disabled="ctrl.showProjectButtons" ng-click="ctrl.HabilitarEdicao()">Alterar</button>
                         <button type="button" class="btn btn-primary" ng-show="ctrl.salvar" ng-click="ctrl.AlterProjetos()">Salvar</button>
@@ -161,12 +163,7 @@
 
                         <button type="button" class="btn btn-primary" ng-show="ctrl.btnSave" ng-hide="ctrl.btnAdd" ng-click="ctrl.Reload()">Cancelar</button>
                     </div>
-                    <!--Fim BOTOESS-->
-
-
-                    <div class="form-group"> <div class="form-group"></div></div>
-                </form>
-            </div>
+                </div>
 
             <div class="jumbotron col-sm-12 col-xs-12">
                 <div class="container-fluid">

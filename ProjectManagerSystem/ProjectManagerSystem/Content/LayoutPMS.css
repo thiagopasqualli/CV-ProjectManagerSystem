@@ -46,11 +46,7 @@
 .container{
     padding-left:0px;
 }
-/*.container .jumbotron {
-    padding-right: 30px;
-    padding-left: 15px;
-    border-radius: 6px;
-}*/
+
 .button-dropdown{
     margin:0px;
     padding:0px;
@@ -59,7 +55,13 @@
 }
 
 .panel-body {
-    padding-right:4px;
+    padding:0px;
+    padding-bottom:20px;
+}
+.head-ocorrencia {
+    font-size:10px;
+    font-weight:bold;
+
 }
 
 #drowpdown-collapse {
@@ -71,7 +73,10 @@
 }
 
 .panel-heading {
-    padding: 0px;
+    padding: 8px;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
 }
 
 #jumbo-panel{
@@ -122,22 +127,12 @@
 .row {
     margin-left:0px;
 }
-table{
-    background-color:#337ab7;
-    border-radius: 10px;
-    color: white;
-}
 
-th{
-    font-size: 18px;
-    text-align: center;
-    margin-top: 5px;
+#ocorrencia-conteudo {
+   font-size: 15px;
+   text-align:justify;
+   padding:8px;
 }
-
-td{
-    text-align: center;
-}
-
 
 
 #showUser {
@@ -234,6 +229,7 @@ fieldset[disabled] .btn-primary.focus {
 .modal {
   text-align: center;
   padding:0px;
+ 
 
   
 }
@@ -250,7 +246,7 @@ fieldset[disabled] .btn-primary.focus {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  width:600px;
+  width:100vh;
 }
 .modal-header {
     background-color:#473C8B;

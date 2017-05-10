@@ -517,6 +517,5 @@ C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\Pro
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.csprojResolveAssemblyReference.cache
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.dll
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.pdb
