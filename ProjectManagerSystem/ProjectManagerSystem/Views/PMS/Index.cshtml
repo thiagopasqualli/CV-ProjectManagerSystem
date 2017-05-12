@@ -2,16 +2,13 @@
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html ng-app="myApp">
-
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-    <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/myApp.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
@@ -20,32 +17,37 @@
 </head>
 
 <body ng-controller="projetosCtrl as ctrl">
-
     <div class="container">
-
-        <div ng-include="'/PMS/Menus'">  </div>
-
-
-        <div class="jumbotron">
-            <h4>Últimos projetos cadastrados...</h4>
-            <div class="panel-body">
-                <div class="list-group">
-                    <div class="form-group">
-                       
+        <div class="row">
+            <div class="col-sm-12 col-xs-12" ng-include="'/PMS/Menus'"> </div>
+            <div class="jumbotron col-sm-12 col-xs-12">
+                <h4>Últimos projetos cadastrados...</h4>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <div class="form-group">
                             <div ng-repeat="x in ctrl.projetos | filter: pesquisa | filter: status |filter: {Status: '!Excluido'} | orderBy: '-Id' | limitTo: 4" ng-click="ctrl.SelectUser(x)">
                                 <div class="form-group" id="form-group-button-project">
-                                    <button type="button" class="btn btn-primary btn-lg" id="button-projects">
-                                        <p id="label-dados-panel">
-                                            {{x.Nome}}
-                                            <div id="status"> Status: {{x.Status}}</div>
+                                    <div class="container" id="container-button">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <button type="button" class="btn btn-primary btn-lg" id="button-projects">
+                                                    <div class="col-sm-9 col-xs-10" id="label-nome-panel">
+                                                        {{x.Nome}}
+                                                    </div>
+                                                    <div class="col-sm-2 col-xs-2 hidden-xs" id="status">
+                                                        Status: {{x.Status}}
 
-                                            <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Id}}" aria-haspopup="true" aria-expanded="false">
-                                                <span class="caret"></span>
-                                                <span class="sr-only">Toggle Dropdown</span>
+                                                    </div>
+                                                    <div class="button-dropdown col-sm-1 col-xs-2">
+                                                        <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Id}}" aria-haspopup="true" aria-expanded="false">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </div>
+                                                    </div>
+                                                </button>
                                             </div>
-                                        </p>
-                                        <!-- dropdown deslize-->
-                                    </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="container" id="container-projects-panel">
                                     <div id="{{x.Id}}" class="collapse">
@@ -71,20 +73,15 @@
                                             <div class="list-group-item">
                                                 <div class="list-group-item-heading"><strong>Status:</strong> {{x.Status}}</div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-   
-        <!--FIM-->
+    </div>
 </body>
 </html>

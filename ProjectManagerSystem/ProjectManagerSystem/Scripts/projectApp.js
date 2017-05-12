@@ -3,9 +3,7 @@ myApp.controller('projectCtrl', function ($http, $window) {
     var ctrl = this;
     ctrl.newData = null;
     ctrl.btnAdd = true;
-    ctrl.btnSave = false;
     ctrl.Classificacao = '';
-    ctrl.Status = ['Andamento', 'Parado', 'Encerrdo'];
     ctrl.salvar = false;
     ctrl.alterar = false;
     ctrl.showAlterarButton = true;
@@ -16,7 +14,6 @@ myApp.controller('projectCtrl', function ($http, $window) {
       .then(function (response) {
           ctrl.projetos = response.data;
       })
-
       .catch(function (response) {
           console.log(response);
       });
@@ -39,17 +36,13 @@ myApp.controller('projectCtrl', function ($http, $window) {
 
     //Delete
     ctrl.DelProjetos = function () {
-        confirma = confirm("Tem certeza que deseja excluir esse projeto?");
-        if (confirma) {
-            $http.post("/PMS/ExcluirProjeto", ctrl.newData);
-            location.reload();
-        }
-    } 
+        $http.post("/PMS/ExcluirProjeto", ctrl.newData);
+        location.reload();
+    }
 
     //Alterar
     ctrl.AlterProjetos = function () {
         $http.post("/PMS/AlterProjetos", ctrl.newData);
-        ctrl.btnSave = false;
         ctrl.btnAdd = true;
         ctrl.salvar = false;
         location.reload();
@@ -75,9 +68,10 @@ myApp.controller('projectCtrl', function ($http, $window) {
     }
 
     ctrl.HabilitarEdicao = function () {
-        ctrl.alterar = false;
-        ctrl.showAlterarButton = false;
         ctrl.salvar = true;
+        ctrl.alterar = false;
+        ctrl.showAlterarButton = false;        
+        ctrl.showProjectButtons = true;
     }
 
     ctrl.Reload = function () {
@@ -89,18 +83,10 @@ myApp.controller('projectCtrl', function ($http, $window) {
         ctrl.alterar = false;
         ctrl.showAlterarButton = true;
         ctrl.showProjectButtons = true;
+        ctrl.verificaDadosLimpar() = true;
     }
 
-    ctrl.ExcluirUser = function () {
-        $http.post("/PMS/DelUsuarios", ctrl.newData).then(function (response) {
-            debugger
-            if ((response.data) == "True")
-                window.alert("excluiu");
-            else
-                window.alert("Usuario Vinculado!");
-     })}
-
-    ctrl.Select = function (user) {
+    ctrl.Select = function (user) {        
         ctrl.newData = user;
         ctrl.btnSave = true;
         ctrl.btnAdd = false;
@@ -113,7 +99,6 @@ myApp.controller('projectCtrl', function ($http, $window) {
 
     ctrl.Clear = function () {
         ctrl.newData = {};
-        ctrl.newData = null;
     }
 
     ctrl.verificaDadosLimpar = function () {

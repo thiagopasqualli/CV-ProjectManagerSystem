@@ -517,5 +517,270 @@ C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\Pro
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.csprojResolveAssemblyReference.cache
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.dll
 C:\Users\gabriel.carpes\Desktop\CV-ProjectManagerSystem\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.pdb
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ApplicationInsights.config
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\csc.exe
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\vbc.exe
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.dll.config
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.pdb
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Antlr3.Runtime.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Web.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.ApplicationInsights.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Newtonsoft.Json.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Owin.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Helpers.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Mvc.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Optimization.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Razor.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\WebGrease.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Web.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.ApplicationInsights.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Helpers.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Mvc.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Optimization.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Razor.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Antlr3.Runtime.pdb
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Newtonsoft.Json.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.csprojResolveAssemblyReference.cache
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.dll
+C:\Users\camila.prestes\Documents\Visual Studio 2015\Projects\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.pdb
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ApplicationInsights.config
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\csc.exe
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\vbc.exe
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\VBCSCompiler.exe
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.dll.config
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.pdb
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Antlr3.Runtime.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.SqlServer.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.DependencyCollector.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Web.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.WindowsServer.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.ApplicationInsights.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Newtonsoft.Json.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Owin.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Net.Http.Formatting.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Helpers.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.WebHost.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Mvc.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Optimization.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Razor.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Razor.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\WebGrease.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.SqlServer.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.DependencyCollector.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Web.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.WindowsServer.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.ApplicationInsights.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Net.Http.Formatting.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.WebHost.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Helpers.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Mvc.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Optimization.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Razor.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Razor.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Antlr3.Runtime.pdb
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Newtonsoft.Json.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.csprojResolveAssemblyReference.cache
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.dll
+C:\Projetos\CV-ProjectManagerSystem-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.pdb
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\ApplicationInsights.config
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\csc.exe
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\vbc.exe
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.dll.config
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\ProjectManagerSystem.pdb
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Antlr3.Runtime.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Web.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.ApplicationInsights.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Newtonsoft.Json.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Owin.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Helpers.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Mvc.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Optimization.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Razor.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\WebGrease.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.Web.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.ApplicationInsights.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Helpers.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Mvc.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Optimization.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.Razor.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Antlr3.Runtime.pdb
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Newtonsoft.Json.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.csprojResolveAssemblyReference.cache
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.dll
+C:\Users\gabriel.carpes\Desktop\PMS20-master\ProjectManagerSystem\ProjectManagerSystem\obj\Debug\ProjectManagerSystem.pdb

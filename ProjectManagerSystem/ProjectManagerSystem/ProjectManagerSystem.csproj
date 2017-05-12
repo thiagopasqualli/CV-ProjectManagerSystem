@@ -210,9 +210,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PMSController.cs" />
     <Compile Include="EntityFramework\PMSDataContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -236,7 +233,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\LayoutPMS.css" />
     <Content Include="Content\navbar.css" />
-    <Content Include="Content\reset.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1044,6 +1040,10 @@
     <Content Include="Scripts\mask.js" />
     <Content Include="Scripts\Modal.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\myApp.js" />
     <Content Include="Scripts\projectApp.js" />
     <Content Include="Scripts\respond.js" />

@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width" />
     <title>Projetos</title>
     <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/moment.js"></script>
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/projectApp.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
-   
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/navbar.css" rel="stylesheet" />
     <link href="~/Content/LayoutPMS.css" rel="stylesheet" />
@@ -25,46 +25,32 @@
 <body ng-controller="projectCtrl as ctrl">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-xs-12" ng-include="'/PMS/Menus'"> </div>
+            <div  class="col-sm-12 col-xs-12" ng-include="'/PMS/Menus'"> </div>
             <div class="jumbotron col-sm-12 col-xs-12">
                 <h2 id="tittle-form">Cadastro de Projetos</h2>
                 <form class="form-horizontal" name="validarCampos">
                     <div class="form-group col-md-7">
                         <label>Código BR Mania</label>
-                        <input ng-disabled="ctrl.alterar" type="text" id="input-brmania" ng-model="ctrl.newData.IdBR" class="form-control" placeholder="Código BR Mania" required />
+                        <input ng-disabled="ctrl.alterar" type="text" id="input-brmania" ng-model="ctrl.newData.IdBR" class="form-control" placeholder="Código BR Mania" maxlength="20" required />
                     </div>
                     <div class="form-group col-md-7">
                         <label>Código Linx</label>
                         <span>
-                            <input ng-disabled="ctrl.alterar" type="text" id="input-codlinx" ng-model="ctrl.newData.IdLinx" class="form-control" placeholder="Código Linx" required />
+                            <input ng-disabled="ctrl.alterar" type="text" id="input-codlinx" ng-model="ctrl.newData.IdLinx" class="form-control" placeholder="Código Linx" maxlength="20" required />
                         </span>
                     </div>
                     <div class="form-group col-md-7">
                         <label>Título</label>
                         <span>
-                            <input ng-disabled="ctrl.alterar" type="text" ng-model="ctrl.newData.Nome" class="form-control" placeholder="Nome do projeto" required />
+                            <input ng-disabled="ctrl.alterar" type="text" ng-model="ctrl.newData.Nome" class="form-control" placeholder="Nome do projeto" maxlength="100" required />
                         </span>
                     </div>
                     <div class="form-group col-md-7">
                         <label>Descrição</label>
                         <span>
-                            <textarea rows="4" cols="50" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.Descricao" data-min-date="01/01/2000" data-max-date="12/12/2070" class="form-control" placeholder="Descrição do projeto" required></textarea>
+                            <textarea rows="4" cols="50" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.Descricao" class="form-control" placeholder="Descrição do projeto" maxlength="1500" required></textarea>
                         </span>
                     </div>
-                    <div class="form-group col-md-7 datepicker">
-                        <label>Início Previsto</label>
-                        <span>
-                            <input type="text" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.InicioPrevisto " data-min-date="01/01/2000" data-max-date="12/12/2070" class="form-control date-mask" style="max-width: 150px" placeholder="dd/mm/aaaa" required mask="00/00/0000" />
-                        </span>
-                    </div>
-                    <div class="form-group col-md-7 datepicker">
-                        <label>Fim Previsto</label>
-                        <span>
-                            <input type="text" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.FimPrevisto " class="form-control" style="max-width: 150px" placeholder="dd/mm/aaaa" required mask="00/00/0000" />
-                        </span>
-                    </div>
-
-
                     <div class="form-group col-md-7">
                         <label>Usuário</label>
                         <br />
@@ -72,25 +58,52 @@
                             <option id="p-selecione" value='' selected="selected" disabled="disabled">Selecione</option>
                         </select>
                     </div>
+                    <div class="form-group col-md-7">
+                        <label>Início Previsto</label>
+                        <span>
+                            <input type="text" name="input" id="form-status-group" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.InicioPrevisto " class="form-control" placeholder="dd/mm/aaaa" required mask="00/00/0000" valida-data />
+                            <span ng-show="validarCampos.input.$touched && validarCampos.input.$invalid">Data inválida</span>
+                        </span>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label>Fim Previsto</label>
+                        <span>
+                            <input type="text" name="fim" id="form-status-group" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.FimPrevisto " class="form-control" placeholder="dd/mm/aaaa" required mask="00/00/0000" valida-data />
+                            <span ng-show="validarCampos.fim.$touched && validarCampos.fim.$invalid">Data inválida</span>
+                        </span>
+                    </div>
+                   
                     <div class="form-group col-md-7 ">
                         <label> Status </label>
                         <br />
-                        <select id="form-select-group" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.Status" class="form-control" required>
+                        <select id="form-status-group" ng-disabled="ctrl.alterar" ng-model="ctrl.newData.Status" class="form-control" required>
                             <option id="p-selecione" value='' selected="selected" disabled="disabled">Selecione</option>
                             <option value="Andamento">Em Andamento</option>
                             <option value="Parado">Parado</option>
                             <option value="Encerrado">Encerrado</option>
                         </select>
                     </div>
-
                 </form>
                     <!--ALL BUTTONS-->
                     <div id="div-all-buttons" class="form-group col-md-12">
-                        <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddProjetos()">Adicionar</button>
+                        <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddProjetos()">Adicionar Projeto</button>
                         <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="ctrl.verificaDadosLimpar()" ng-click="ctrl.Clear()">Limpar</button>
-                        
-                        <div class="modal fade " id="myModal" role="dialog" tabindex="-1" aria-labelledby="gridSystemModalLabel">
-                            <div class="modal-dialog" role="document">
+                        <button type="button" class="btn btn-primary" ng-show="ctrl.showAlterarButton" ng-disabled="ctrl.showProjectButtons" ng-click="ctrl.HabilitarEdicao()">Alterar</button>
+                        <button type="button" class="btn btn-primary" ng-disable="validarCampos.$invalid" ng-show="ctrl.salvar" ng-click="ctrl.AlterProjetos()">Salvar</button>
+                        <button type="button" class="btn btn-primary" ng-disabled="ctrl.showProjectButtons" ng-click="ctrl.DelProjetos()">Excluir</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="ctrl.showProjectButtons">
+                                Ocorrências      <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">Adicionar</a></li>
+                                <li><a href="#" ng-click="ctrl.GetOcorrencias()" ng-disabled="ctrl.showProjectButtons" data-toggle="modal" data-target="#myModal2">Visualizar</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary" ng-show="ctrl.salvar" ng-hide="ctrl.btnAdd" ng-click="ctrl.Reload()">Cancelar</button>
+
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">×</button>
@@ -109,14 +122,14 @@
                                             </div>
                                         </div>
                                         <div class="button-add-ocorrencia-modal form-group">
-                                            <button type="button" class="btn btn-primary" ng-disable="validarCampos.$invalid" ng-click="ctrl.AddOcorrencia()">Adicionar</button>
+                                            <button type="button" class="btn btn-primary" ng-click="ctrl.AddOcorrencia()">Adicionar</button>
                                             <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                                    </div> <!-- class="modal-body -->
+                                </div> <!-- class="modal-content"> -->
+                            </div> <!-- class="modal-dialog" -->
                         </div>
-                           
                         <div class="modal fade" id="myModal2" role="dialog">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -146,24 +159,11 @@
                                 </div>
                             </div>
                         </div>
-
-                        <button type="button" class="btn btn-primary" ng-show="ctrl.showAlterarButton" ng-disabled="ctrl.showProjectButtons" ng-click="ctrl.HabilitarEdicao()">Alterar</button>
-                        <button type="button" class="btn btn-primary" ng-show="ctrl.salvar" ng-click="ctrl.AlterProjetos()">Salvar</button>
-                        <button type="button" class="btn btn-primary" ng-disabled="ctrl.showProjectButtons" ng-click="ctrl.DelProjetos()">Excluir</button>
-
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="ctrl.showProjectButtons">
-                                Ocorrências      <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" data-toggle="modal" data-target="#myModal">Adicionar</a></li>
-                                <li><a href="#" ng-click="ctrl.GetOcorrencias()" ng-disabled="ctrl.showProjectButtons" data-toggle="modal" data-target="#myModal2">Visualizar</a></li>
-                            </ul>
-                        </div>
-
-                        <button type="button" class="btn btn-primary" ng-show="ctrl.btnSave" ng-hide="ctrl.btnAdd" ng-click="ctrl.Reload()">Cancelar</button>
                     </div>
-                </div>
+                    <!--Fim BOTOESS-->
+                    
+            </div>
+
 
             <div class="jumbotron col-sm-12 col-xs-12">
                 <div class="container-fluid">

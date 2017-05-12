@@ -3,10 +3,11 @@ myApp.controller('userCtrl', function ($http, $window) {
     var ctrl = this;
     ctrl.newData = null;
     ctrl.btnAdd = true;
-    ctrl.btnSave = false;
     ctrl.salvar = false;
     ctrl.alterar = false;
     ctrl.showAlterarButton = true;
+    ctrl.showUserButtons = true;
+
 
     //Get
     $http.get("/PMS/GetUsuarios")
@@ -26,12 +27,12 @@ myApp.controller('userCtrl', function ($http, $window) {
     //Limpar
     ctrl.Clear = function () {
         ctrl.newData = {};
+        ctrl.verificaDadosLimpar() = true;
     }
 
     //Alterar
     ctrl.AlterUser = function () {
         $http.post("/PMS/AlterUsuarios", ctrl.newData);
-        ctrl.btnSave = false;
         ctrl.btnAdd = true;
         ctrl.salvar = false;
         location.reload();
@@ -41,6 +42,8 @@ myApp.controller('userCtrl', function ($http, $window) {
         ctrl.alterar = false;
         ctrl.showAlterarButton = false;
         ctrl.salvar = true;
+        ctrl.showUserButtons = true;      
+
     }
 
     ctrl.Reload = function () {
@@ -50,9 +53,13 @@ myApp.controller('userCtrl', function ($http, $window) {
         ctrl.salvar = false;
         ctrl.alterar = false;
         ctrl.showAlterarButton = true;
+        ctrl.showUserButtons = true;
+        ctrl.verificaDadosLimpar() = true;
+
+        ctrl.newData.$setPristine();
     }
 
-    ctrl.ExcluirUser = function () {
+    ctrl.DelUser = function () {
         confirma = confirm("Tem certeza que deseja excluir esse usuário?");
         if (confirma) {
             $http.post("/PMS/DelUsuarios", ctrl.newData).then(function (response) {
@@ -75,11 +82,7 @@ myApp.controller('userCtrl', function ($http, $window) {
         ctrl.visualizar = true;
         ctrl.alterar = true;
         ctrl.salvar = false;
-    }
-
-    ctrl.Clear = function () {
-        ctrl.newData = {};
-        ctrl.newData == null;
+        ctrl.showUserButtons
     }
 
     ctrl.verificaDadosLimpar = function () {

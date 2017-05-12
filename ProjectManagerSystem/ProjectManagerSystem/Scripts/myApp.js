@@ -1,18 +1,13 @@
 ﻿var myApp = angular.module('myApp', []);
-myApp.controller('projetosCtrl', function ($http,$window) {
+myApp.controller('projetosCtrl', function ($http, $window) {
     var ctrl = this;
     ctrl.newData = null;
     ctrl.btnAdd = true;
     ctrl.btnSave = false;
     ctrl.Classificacao = '';
-    ctrl.Status = ['Andamento', 'Parado', 'Encerrdo'];
     ctrl.salvar = false;
     ctrl.alterar = false;
     ctrl.showAlterarButton = true;
-    
-    
-
-
 
     // USUARIOS
     //==========================================================================================
@@ -37,12 +32,13 @@ myApp.controller('projetosCtrl', function ($http,$window) {
         $http.post("/PMS/DelUsuarios", ctrl.newData);
         location.reload();
     }
+
     //Limpar
     ctrl.Clear = function () {
         ctrl.newData = {};
     }
 
-   
+
     //Alterar
     ctrl.AlterUser = function () {
         $http.post("/PMS/AlterUsuarios", ctrl.newData);
@@ -71,7 +67,7 @@ myApp.controller('projetosCtrl', function ($http,$window) {
     }
 
     //DeleteProjetos
- 
+
     ctrl.DelProjetos = function () {
         $http.post("/PMS/DelProjetos", ctrl.newData);
         location.reload();
@@ -84,16 +80,13 @@ myApp.controller('projetosCtrl', function ($http,$window) {
         ctrl.btnAdd = true;
         ctrl.salvar = false;
         location.reload();
-
     }
-
 
     // OCORRÊNCIAS
     //==========================================================================================
 
     //GetOcorrencias
     ctrl.GetOcorrencias = function () {
-
         $http.post("/PMS/GetListaOcorrencias/" + ctrl.newData.Id)
           .then(function (response) {
               ctrl.ocurrences = response.data;
@@ -114,8 +107,9 @@ myApp.controller('projetosCtrl', function ($http,$window) {
         ctrl.showAlterarButton = false;
         ctrl.salvar = true;
     }
+
     ctrl.Reload = function () {
-       
+
         ctrl.newData = {};
         ctrl.btnAdd = true;
         ctrl.btnSave = false;
@@ -126,14 +120,11 @@ myApp.controller('projetosCtrl', function ($http,$window) {
 
     ctrl.ExcluirUser = function () {
         $http.post("/PMS/DelUsuarios", ctrl.newData).then(function (response) {
-            debugger
             if ((response.data) == "True")
                 window.alert("excluiu");
             else
                 window.alert("Usuario Vinculado!");
-        }
-
-        )
+        })
     }
 
     //Selecionar 
@@ -145,8 +136,6 @@ myApp.controller('projetosCtrl', function ($http,$window) {
         ctrl.visualizar = true;
         ctrl.alterar = true;
         ctrl.salvar = false;
-
     }
-
 
 });

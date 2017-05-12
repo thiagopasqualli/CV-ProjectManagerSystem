@@ -156,7 +156,10 @@
 
 
 #form-select-group {
-    width:150px;
+    width:70%;
+}
+#form-status-group {
+    width:25%;
 }
 
 #p-selecione {

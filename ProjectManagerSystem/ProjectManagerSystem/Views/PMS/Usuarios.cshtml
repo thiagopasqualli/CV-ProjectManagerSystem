@@ -4,121 +4,144 @@
 }
 
 <!DOCTYPE html>
-<html ng-app="myApp">
 
+<html ng-app="myApp">
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Usuários</title>
-    <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/userApp.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/navbar.css" rel="stylesheet" />
     <link href="~/Content/LayoutPMS.css" rel="stylesheet" />
+    <script src="~/Scripts/mask.js"></script>
 
 </head>
 
 <body ng-controller="userCtrl as ctrl">
     <div class="container">
-        <div ng-include="'/PMS/Menus'"> </div>
-        <div class="jumbotron">
-            <h2 id="tittle-form">Cadastro de Usuarios</h2>
-            <form class="form-horizontal" name="validarCampos">
-                <div class="form-group col-md-7">
-                    <label>Nome: </label>
-                    <input ng-disabled="ctrl.alterar" type="text" id="input-brmania" ng-model="ctrl.newData.NomeUsuario" class="form-control" placeholder="Nome Completo" required />
-                </div>
-                <div class="form-group col-md-7">
-                    <label>E-mail: </label>
-                    <input ng-disabled="ctrl.alterar" type="text" id="input-brmania" ng-model="ctrl.newData.Email" class="form-control" placeholder="E-mail" required />
-                </div>
-                <div class="form-group col-md-7">
-                    <label>Horas Nominais: </label>
-                    <input ng-disabled="ctrl.alterar" type="text" id="input-brmania" ng-model="ctrl.newData.QtdHorasNominais" class="form-control" placeholder="Horas Nominais" required />
-                </div>
-                <div class="form-group col-md-7">
-                    <label>Horas Disponíveis: </label>
-                    <input ng-disabled="ctrl.alterar" type="text" id="input-brmania" ng-model="ctrl.newData.QtdHorasDisponiveis" class="form-control" placeholder="Horas Disponíveis" required />
-                </div>
-                <!--ALL BUTTONS-->
-                <div id="div-all-buttons" class="form-group col-md-12">
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddUser()">Adicionar Usuário</button>
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="ctrl.verificaDadosLimpar()" ng-click="ctrl.Clear()">Limpar</button> 
-                    <button type="button" ng-hide="edit" class="btn btn-primary" ng-disabled="validarCampos.$invalid" ng-click="ctrl.ExcluirUser()">Excluir</button>
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.alterar" ng-disabled="validarCampos.$invalid" ng-click="ctrl.HabilitarEdicao()">Alterar</button>
-
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.salvar" ng-click="ctrl.AlterUser()">Salvar</button>
-                    <button type="button" class="btn btn-primary" ng-show="ctrl.btnSave" ng-hide="ctrl.btnAdd" ng-click="ctrl.Reload()">Cancelar</button>
-                </div>
-                <div class="form-group"> <div class="form-group"></div></div>
-             </form>
-        </div>
+        <div class="row">
+            <div class="col-sm-12 col-xs-12" ng-include="'/PMS/Menus'"> </div>
+            <div class="jumbotron col-sm-12 col-xs-12">
+                <h2 id="tittle-form">Cadastro de Usuários</h2>
+                <form class="form-horizontal" name="validarCampos">
+                    <div class="form-group col-md-7">
+                        <label>Nome: </label>
+                        <input ng-disabled="ctrl.alterar" type="text" ng-model="ctrl.newData.NomeUsuario" class="form-control" maxlength="100" placeholder="Nome Completo" required />
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label>E-mail: </label>
+                        <input ng-disabled="ctrl.alterar" name="email" type="email" ng-model="ctrl.newData.Email" class="form-control" maxlength="60" placeholder="E-mail" required />
+                        <span ng-show="validarCampos.email.$touched && validarCampos.email.$invalid">E-mail inválido</span>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label>Horas Disponíveis: </label>
+                        <input ng-disabled="ctrl.alterar" name="disponiveis" type="number" ng-model="ctrl.newData.QtdHorasDisponiveis" min="0" max="24" class="form-control" placeholder="Ex.: 8" required />
+                        <span ng-show="validarCampos.disponiveis.$touched && validarCampos.disponiveis.$invalid">Quantidade de horas inválida</span>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label>Horas Nominais: </label>
+                        <input ng-disabled="ctrl.alterar" name="nominais" type="number" ng-model="ctrl.newData.QtdHorasNominais" min="0" max="24" class="form-control" placeholder="Ex.: 6" required />
+                        <span ng-show="validarCampos.nominais.$touched && validarCampos.nominais.$invalid">Quantidade de horas inválida</span>
+                    </div>
+                </form>
+                    <!--ALL BUTTONS-->
+                    <div id="div-all-buttons" class="form-group col-md-12">
+                        <button type="button" class="btn btn-primary" ng-show="ctrl.btnAdd" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AddUser()">Adicionar Usuário</button>
+                        <button type="button" class="btn btn-primary" ng-disabled="ctrl.verificaDadosLimpar()" ng-click="ctrl.Clear()">Limpar</button>
+                        <button type="button" class="btn btn-primary" ng-show="ctrl.alterar" ng-disabled="validarCampos.$invalid" ng-click="ctrl.HabilitarEdicao()">Alterar</button>
+                        <button type="button" class="btn btn-primary" ng-disabled="validarCampos.$invalid" ng-click="ctrl.DelUser()">Excluir</button>
+                        <button type="button" class="btn btn-primary" ng-show="ctrl.salvar" ng-disabled="validarCampos.$invalid" ng-click="ctrl.AlterUser()">Salvar</button>
+                        <button type="button" class="btn btn-primary" ng-show="ctrl.salvar" ng-hide="ctrl.btnAdd" ng-click="ctrl.Reload()">Cancelar</button>
+                    </div>
+                    <div class="form-group"> <div class="form-group"></div></div>
+                
+            
             <!--Fim BOTOESS-->
         </div> <!--FIM PRIMEIRO JUMBOTROX-->-->
+        
+            <div class="jumbotron col-sm-12 col-xs-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2 class="col-sm-12" id="tittle-form">Consulta de Usuários</h2>
+                    </div>
+                    <div class="row">
+                        <div class="input-group col-sm-12">
+                            <div class="input-group-btn">
 
-    <div class="container">
-        <div class="jumbotron">
-            <h2 id="tittle-form">Consulta de Usuários</h2>
-            <div class="input-group">
-                <div class="input-group-btn">
-
-                    <button type="button" class="btn btn-default" id="button-sorting">Ordenação </button>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" ng-model="Classificacao">
-                        <li><a href="#" ng-click="ctrl.Classificacao = 'Matricula'">Matricula</a></li>
-                        <li><a href="#" ng-click="ctrl.Classificacao = 'NomeUsuario'">Nome</a></li>
-                        <li><a href="#" ng-click="ctrl.Classificacao = 'Email'">Email</a></li>
-                        <li><a href="#" ng-click="ctrl.Classificacao = 'QtdHorasNominais'">Qtd Horas Nominais</a></li>
-                        <li><a href="#" ng-click="ctrl.Classificacao = 'QtdHorasDisponiveis'">Qtd Horas Disponiveis</a></li>
-                    </ul>
-                </div><!-- /btn-group -->
-                <input type="text" ng-model="pesquisa" class="form-control" placeholder="Barra de pesquisa..." aria-label="...">
-            </div><!-- Ordenacao, barra pesquisa, status = FIM-->
-            <br />
-
-            <div class="panel-body">
-                <div class="list-group">
-                    <div class="form-group">
-                        <div ng-repeat="x in ctrl.usuarios | filter: pesquisa | filter: {Status: '!Excluido'} | orderBy:ctrl.Classificacao" ng-click="ctrl.SelectUser(x)">
-                            <div class="form-group" id="form-group-button-project">
-                                <button type="button" class="btn btn-primary btn-lg" id="button-projects">
-                                    <p id="label-dados-panel">
-                                        {{x.NomeUsuario}}
-                                        <div id="espaco"></div>
-
-                                        <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Matricula}}" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </div>
-
-                                    </p>
-                                    <!-- dropdown deslize-->
+                                <button type="button" class="btn btn-default" id="button-sorting">Ordenação </button>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
                                 </button>
-                            </div>
+                                <ul class="dropdown-menu" ng-model="Classificacao">
+                                    <li><a href="#" ng-click="ctrl.Classificacao = 'Matricula'">Matricula</a></li>
+                                    <li><a href="#" ng-click="ctrl.Classificacao = 'NomeUsuario'">Nome</a></li>
+                                    <li><a href="#" ng-click="ctrl.Classificacao = 'Email'">Email</a></li>
+                                    <li><a href="#" ng-click="ctrl.Classificacao = 'QtdHorasNominais'">Horas Nominais</a></li>
+                                    <li><a href="#" ng-click="ctrl.Classificacao = 'QtdHorasDisponiveis'">Horas Disponiveis</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                            <input type="text" ng-model="pesquisa" class="form-control" placeholder="Barra de pesquisa..." aria-label="...">
+                        </div><!-- Ordenacao, barra pesquisa, status = FIM-->
+                        <br />
 
-                            <div class="container" id="container-projects-panel">
-                                <div id="{{x.Matricula}}" class="collapse">
-                                    <div class="list-group">
-                                        <div class="list-group-item clearfix">
-                                            <div class="list-group-item-heading  col-md-6"><strong> Nome: </strong> {{x.NomeUsuario}}</div>
-                                            <div id="list-group-item-text" class="list-group-item-heading col-md-6"><strong>Matrícula: </strong> {{x.Matricula}}</div>
+
+                        <div class="list-group">
+                            <div class="form-group">
+                                <div ng-repeat="x in ctrl.usuarios | filter: pesquisa | filter: {Status: '!Excluido'} | orderBy:ctrl.Classificacao" ng-click="ctrl.SelectUser(x)">
+                                    <div class="form-group" id="form-group-button-project">
+                                        <div class="container" id="container-button">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <button type="button" class="btn btn-primary btn-lg" id="button-projects">
+
+                                                        <div class="col-sm-9 col-xs-10" id="label-nome-panel">
+                                                            {{x.NomeUsuario}}
+                                                        </div>
+                                                        <div class="col-sm-2 col-xs-2 hidden-xs">                                                         
+
+                                                        </div>
+                                                        <div class="button-dropdown col-sm-1 col-xs-2">
+                                                            <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Matricula}}" aria-haspopup="true" aria-expanded="false">
+                                                                <span class="caret"></span>
+                                                                <span class="sr-only">Toggle Dropdown</span>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="list-group-item">
-                                            <div class="list-group-item-heading "><strong>E-mail: </strong> {{x.Email}}</div>
-                                        </div>
-                                        <div class="list-group-item clearfix">
-                                            <div class="list-group-item-heading  col-md-6"><strong> Horas Nominais: </strong> {{x.QtdHorasNominais}}</div>
-                                            <div id="list-group-item-text" class="list-group-item-heading col-md-6"><strong>Horas Disponíveis: </strong> {{x.QtdHorasDisponiveis}}</div>
+
+
+                                    </div>
+
+                                    <div class="container" id="container-projects-panel">
+                                        <div id="{{x.Matricula}}" class="collapse">
+                                            <div class="list-group">
+                                                <div class="list-group-item clearfix">
+                                                    <div class="list-group-item-heading  col-md-6"><strong> Nome: </strong> {{x.NomeUsuario}}</div>
+                                                    <div id="list-group-item-text" class="list-group-item-heading col-md-6"><strong>Matrícula: </strong> {{x.Matricula}}</div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="list-group-item-heading "><strong>E-mail: </strong> {{x.Email}}</div>
+                                                </div>
+                                                <div class="list-group-item clearfix">
+                                                    <div class="list-group-item-heading  col-md-6"><strong> Horas Nominais: </strong> {{x.QtdHorasNominais}}</div>
+                                                    <div id="list-group-item-text" class="list-group-item-heading col-md-6"><strong>Horas Disponíveis: </strong> {{x.QtdHorasDisponiveis}}</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
