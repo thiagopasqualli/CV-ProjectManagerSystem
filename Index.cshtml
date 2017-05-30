@@ -1,0 +1,89 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+   <script src="~/Scripts/angular.js"></script>
+	<!--<script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>-->
+    <script src="~/Scripts/myApp.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/navbar.css" rel="stylesheet" />
+    <link href="~/Content/LayoutPMS.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="projetosCtrl as ctrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12" ng-include="'/pms_producao/PMS/Menus'"> </div>
+			
+            <div class="jumbotron col-sm-12 col-xs-12">
+                <h4>Últimos projetos cadastrados...</h4>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <div class="form-group">
+                            <div ng-repeat="x in ctrl.projetos | filter: pesquisa | filter: status |filter: {Status: '!Excluido'} | orderBy: '-Id' | limitTo: 4" ng-click="ctrl.SelectUser(x)">
+                                <div class="form-group" id="form-group-button-project">
+                                    <div class="container" id="container-button">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <button type="button" class="btn btn-primary btn-lg" id="button-projects">
+                                                    <div class="col-sm-9 col-xs-10" id="label-nome-panel">
+                                                        {{x.Nome}}
+                                                    </div>
+                                                    <div class="col-sm-2 col-xs-2 hidden-xs" id="status">
+                                                        Status: {{x.Status}}
+
+                                                    </div>
+                                                    <div class="button-dropdown col-sm-1 col-xs-2">
+                                                        <div id="dropdown-collapse" type="button" class="btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#{{x.Id}}" aria-haspopup="true" aria-expanded="false">
+                                                            <span class="caret"></span>
+                                                            <span class="sr-only">Toggle Dropdown</span>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container" id="container-projects-panel">
+                                    <div id="{{x.Id}}" class="collapse">
+                                        <div class="list-group">
+                                            <div class="list-group-item clearfix">
+                                                <div class="list-group-item-heading  col-md-6"><strong> Código BR Mania:</strong> {{x.IdBR}}</div>
+                                                <div id="list-group-item-text" class="list-group-item-heading col-md-6"><strong>Código Linx:</strong> {{x.IdLinx}}</div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="list-group-item-heading "><strong>Título:</strong> {{x.Nome}}</div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="list-group-item-heading "><strong>Descrição:</strong> {{x.Descricao}}</div>
+                                            </div>
+                                            <div class="list-group-item">
+                                                <div class="list-group-item-heading "><strong>Usuário:</strong> {{x.NomeUsuario}}</div>
+                                            </div>
+                                            <div class="list-group-item clearfix">
+                                                <div class="list-group-item-heading col-md-6"><strong>Início Previsto:</strong> {{x.InicioPrevisto | date: 'dd/MM/yyyy'}} </div>
+                                                <div id="list-group-item-text" class="list-group-item-heading col-md-6"><strong>Fim Previsto:</strong> {{x.FimPrevisto | date: 'dd/MM/yyyy'}}</div>
+                                            </div>
+
+                                            <div class="list-group-item">
+                                                <div class="list-group-item-heading"><strong>Status:</strong> {{x.Status}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
